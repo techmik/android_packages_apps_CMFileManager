@@ -83,8 +83,6 @@ public class HttpUtils
         }
         String postedBody = new String(postedBytes, 0, len, "8859_1");
         return parseQueryString(postedBody);
-        postedBody;
-        throw new IllegalArgumentException(postedBody.getMessage());
     }
 
     private static String parseName(String s, StringBuffer sb)

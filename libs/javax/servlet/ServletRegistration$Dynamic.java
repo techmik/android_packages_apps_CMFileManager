@@ -5,8 +5,8 @@ import java.util.Set;
 // Referenced classes of package javax.servlet:
 //            ServletRegistration, Registration, ServletSecurityElement, MultipartConfigElement
 
-public static interface 
-    extends ServletRegistration, 
+public static interface ServletRegistration$Dynamic
+    extends ServletRegistration
 {
 
     public abstract void setLoadOnStartup(int i);

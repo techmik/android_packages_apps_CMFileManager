@@ -117,9 +117,6 @@ public class Cookie
     public Object clone()
     {
         return super.clone();
-        CloneNotSupportedException e;
-        e;
-        throw new RuntimeException(e.getMessage());
     }
 
     private static final String LSTRING_FILE = "javax.servlet.http.LocalStrings";

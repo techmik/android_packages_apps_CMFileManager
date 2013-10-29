@@ -23,9 +23,9 @@ public static final class A extends Enum
 
     static 
     {
-        NONE = new <init>("NONE", 0);
-        CONFIDENTIAL = new <init>("CONFIDENTIAL", 1);
-        $VALUES = (new .VALUES[] {
+        NONE = new <init>A("NONE", 0);
+        CONFIDENTIAL = new <init>A("CONFIDENTIAL", 1);
+        $VALUES = (new A.VALUES[] {
             NONE, CONFIDENTIAL
         });
     }
