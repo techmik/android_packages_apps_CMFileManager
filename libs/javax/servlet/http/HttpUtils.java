@@ -75,7 +75,7 @@ public class HttpUtils
             throw new IllegalArgumentException();
         }
         postedBytes = new byte[len];
-        try
+//        try
         {
             int offset = 0;
             do
@@ -96,8 +96,8 @@ public class HttpUtils
         }
         String postedBody = new String(postedBytes, 0, len, "8859_1");
         return parseQueryString(postedBody);
-    }
 */
+    }
     private static String parseName(String s, StringBuffer sb)
     {
         sb.setLength(0);
