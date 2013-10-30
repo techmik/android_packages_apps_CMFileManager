@@ -131,9 +131,6 @@ public class Cookie
     public Object clone()
     {
         return super.clone();
-        CloneNotSupportedException e;
-        e;
-        throw new RuntimeException(e.getMessage());
     }
 
 }

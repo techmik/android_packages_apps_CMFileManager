@@ -89,17 +89,15 @@ public class HttpUtils
                 offset += inputLen;
             } while(len - offset > 0);
         }
-        // Misplaced declaration of an exception variable
+/*        // Misplaced declaration of an exception variable
         catch(UnsupportedEncodingException e)
         {
             throw new IllegalArgumentException(e.getMessage());
         }
         String postedBody = new String(postedBytes, 0, len, "8859_1");
         return parseQueryString(postedBody);
-        postedBody;
-        throw new IllegalArgumentException(postedBody.getMessage());
     }
-
+*/
     private static String parseName(String s, StringBuffer sb)
     {
         sb.setLength(0);
