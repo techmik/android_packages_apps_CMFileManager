@@ -19,7 +19,6 @@ package com.cyanogenmod.filemanager.commands.shell;
 import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 
-import com.android.internal.util.XmlUtils;
 import com.cyanogenmod.filemanager.FileManagerApplication;
 import com.cyanogenmod.filemanager.R;
 import com.cyanogenmod.filemanager.console.CommandNotFoundException;
