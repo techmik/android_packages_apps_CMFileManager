@@ -32,4 +32,10 @@ LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include $(BUILD_PACKAGE)
 
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += javax.servlet:libs/javax.servlet.jar
+LOCAL_STATIC_JAVA_LIBRARIES += javax.servlet
+
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += javax.naming:libs/javax.naming.jar
+LOCAL_STATIC_JAVA_LIBRARIES += javax.naming
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
