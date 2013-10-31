@@ -24,9 +24,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 
-import jcifs.smb.SmbAuthException;
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import jcifs.jar.smb.SmbAuthException;
+import jcifs.jar.smb.SmbException;
+import jcifs.jar.smb.SmbFile;
 
 public class SambaExplorer extends android.app.ListActivity {
 	public ArrayAdapter<String> mList;
@@ -195,7 +195,7 @@ public class SambaExplorer extends android.app.ListActivity {
 	        SetLastListItem("Connecting to "+mHost);
 	
 			jcifs.Config.setProperty("jcifs.encoding", "Cp1252");
-	        jcifs.Config.setProperty("jcifs.smb.lmCompatibility", "0");
+	        jcifs.Config.setProperty("jcifs.jar.smb.lmCompatibility", "0");
 	        jcifs.Config.setProperty("jcifs.netbios.hostname", "AndroidPhone");
 			
 			jcifs.Config.registerSmbURLHandler();

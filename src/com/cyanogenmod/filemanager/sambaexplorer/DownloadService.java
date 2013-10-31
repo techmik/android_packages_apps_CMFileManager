@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 
-import jcifs.smb.NtlmPasswordAuthentication;
-import jcifs.smb.SmbAuthException;
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
-import jcifs.smb.SmbFileInputStream;
+import jcifs.jar.smb.NtlmPasswordAuthentication;
+import jcifs.jar.smb.SmbAuthException;
+import jcifs.jar.smb.SmbException;
+import jcifs.jar.smb.SmbFile;
+import jcifs.jar.smb.SmbFileInputStream;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Notification;
