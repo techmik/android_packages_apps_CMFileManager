@@ -1,6 +1,5 @@
 package com.cyanogenmod.filemanager;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
@@ -9,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.net.Uri;
 import android.os.Bundle;
+
+import com.cyanogenmod.filemanager.R;
 
 public class SambaLogin extends Activity {
         public String share;

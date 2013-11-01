@@ -23,6 +23,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.cyanogenmod.filemanager.R;
 
 import jcifs.smb.SmbAuthException;
 import jcifs.smb.SmbException;

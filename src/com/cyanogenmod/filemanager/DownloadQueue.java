@@ -10,6 +10,7 @@ import android.view.Window;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import com.cyanogenmod.filemanager.R;
 
 

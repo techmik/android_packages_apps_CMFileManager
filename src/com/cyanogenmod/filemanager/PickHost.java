@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.content.Intent;
 
+import com.cyanogenmod.filemanager.R;
+
 public class PickHost extends Activity {
         
         @Override

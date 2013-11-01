@@ -21,6 +21,7 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.widget.RemoteViews;
 
+import com.cyanogenmod.filemanager.R;
 
 public class DownloadService extends Service {
         public static String[] DownloadQueue = new String[2048];
