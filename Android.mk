@@ -30,10 +30,14 @@ LOCAL_CERTIFICATE := platform
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 LOCAL_STATIC_JAVA_LIBRARIES += jcifs
+LOCAL_STATIC_JAVA_LIBRARIES += javax.servlet
+LOCAL_STATIC_JAVA_LIBRARIES += jndi
 
 include $(BUILD_PACKAGE)
 
 LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += jcifs:libs/jcifs.jar
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += javax.servlet:libs/javax.servlet.jar
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += jndi:libs/jndi.jar
 include $(BUILD_MULTI_PREBUILT)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
