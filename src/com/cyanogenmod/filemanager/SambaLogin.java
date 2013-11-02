@@ -34,7 +34,7 @@ public class SambaLogin extends Activity {
 
                         com.cyanogenmod.filemanager.DownloadService.ProvideLoginCredentials(domain.toString(), username.toString(), password.toString());
 
-                        Intent intent = new Intent(this, com.cyanogenmod.filemanager.SambaExplorer.class);
+                        Intent intent = new Intent();
                         intent.setData(Uri.parse(share));
                         startActivity(intent);  
                 }
