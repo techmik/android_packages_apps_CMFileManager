@@ -13,16 +13,16 @@ import com.cyanogenmod.filemanager.R;
 
 public class SambaLogin extends Activity {
         public String share;
-        
+
         @Override
     public void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                
+
                 Intent i = getIntent();
                 share = i.getStringExtra("share");
-                
+
                 setContentView(R.layout.login);
-        
+
                 Button btn = (Button)findViewById(R.id.Button01);
                 btn.setOnClickListener(new OnClickListener()
             {
@@ -31,9 +31,9 @@ public class SambaLogin extends Activity {
                         EditText domain = (EditText)findViewById(R.id.EditTextDomain);
                         EditText username = (EditText)findViewById(R.id.EditTextUsername);
                         EditText password = (EditText)findViewById(R.id.EditTextPassword);
-                        
+
                         com.cyanogenmod.filemanager.DownloadService.ProvideLoginCredentials(domain.toString(), username.toString(), password.toString());
-                        
+
                         Intent intent = new Intent(this, com.cyanogenmod.filemanager.SambaExplorer.class);
                         intent.setData(Uri.parse(share));
                         startActivity(intent);  
