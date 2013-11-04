@@ -21,7 +21,6 @@ LOCAL_SRC_FILES := $(call all-subdir-java-files)
 LOCAL_SRC_FILES += $(call all-java-files-under, themes/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, libs/android-syntax-highlight/src)
 LOCAL_SRC_FILES += $(call all-java-files-under, libs/color-picker-view/src)
-LOCAL_SRC_FILES += $(call all-java-files-under, libs/jcifs)
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, themes/res res)
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 LOCAL_AAPT_FLAGS := --auto-add-overlay
@@ -30,6 +29,15 @@ LOCAL_PACKAGE_NAME := CMFileManager
 LOCAL_CERTIFICATE := platform
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
+LOCAL_STATIC_JAVA_LIBRARIES += jcifs
+LOCAL_STATIC_JAVA_LIBRARIES += javax.servlet
+LOCAL_STATIC_JAVA_LIBRARIES += jndi
+
 include $(BUILD_PACKAGE)
+
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += jcifs:libs/jcifs.jar
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += javax.servlet:libs/javax.servlet.jar
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES += jndi:libs/jndi.jar
+include $(BUILD_MULTI_PREBUILT)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
