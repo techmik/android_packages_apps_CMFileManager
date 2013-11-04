@@ -3,6 +3,7 @@
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
 -dontpreverify
+-dontwarn java.applet.**
 -verbose
 -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
 
